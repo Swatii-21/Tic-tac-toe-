@@ -38,9 +38,31 @@ body {
 #reset-btn{
     padding : 1rem ; 
     font-size: 1.25rem ; 
-    background : blue ;
+    background-color : blue ;
     color : white ; 
     border-radius : 1rem ; 
     border : none;
 
+}
+
+#new-btn{
+     padding : 1rem ; 
+    font-size: 1.25rem ; 
+    background-color : blue ;
+    color : white ; 
+    border-radius : 1rem ; 
+    border : none;
+}
+
+#msg {
+   color : yellow ; 
+   font-size : 8vmin ; 
+}
+
+.msg-container {
+    height : 20 vmin ; 
+}
+
+.hide {
+    display : none;
 }
