@@ -20,6 +20,25 @@ const winpattern = [
 boxes.forEach((box) =>{
     box.addEventListener("click" , () => {
         console.log("box was clicked ") ; 
-        box.innerText = "abcd" ;
+        
+        if( turn0 ){
+            //player0
+            box.innerText = "0";
+            turn0 = false ; 
+        } else {
+            //player x 
+            box.innerText = "X" ; 
+            turn0 = true ; 
+        }
+        box.disabled = true ; 
+
+        checkwinner();
     }) ; 
-}) 
+}) ; 
+
+const checkwinner =() => {
+    for(pattern of winpatterns){
+        console.log(pattern[0] , pattern[1] , pattern[2]);
+        console.log(pattern[0].innerText , pattern[1].innerText , pattern[2].innerText);
+    }
+};
